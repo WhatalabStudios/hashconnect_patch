@@ -4,8 +4,9 @@ import { MessageUtil, MessageHandler, MessageTypes, RelayMessage, RelayMessageTy
 import { HashConnectTypes, IHashConnect, HashConnectConnectionState } from "./types/hashconnect";
 import { HashConnectProvider } from "./provider/provider";
 import { HashConnectSigner } from "./provider/signer";
+import { Buffer } from 'buffer'
 
-global.Buffer = global.Buffer || require('buffer').Buffer;
+global.Buffer = global.Buffer || Buffer;
 
 /**
  * Main interface with hashpack
